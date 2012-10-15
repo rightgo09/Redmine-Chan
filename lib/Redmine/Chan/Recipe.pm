@@ -47,7 +47,7 @@ sub cook {
         my ($note, $issue_id) = ($1, $2);
         $api->note_issue($issue_id, $note);
         $reply = $api->issue_detail($issue_id);
-    } elsif ($msg =~ /\#(\d+)/) {
+    } elsif ($msg =~ /\#(\d+)/ && $who ne "jenkins") {
         # issue 確認/update
         my $issue_id = $1;
         $api->update_issue($issue_id, $msg);
