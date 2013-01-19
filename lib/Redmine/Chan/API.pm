@@ -6,7 +6,6 @@ use base qw(WebService::Simple);
 
 use JSON;
 use URI;
-use Encode qw/decode_utf8/;
 
 my @keys;
 
