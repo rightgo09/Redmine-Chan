@@ -43,7 +43,14 @@ sub get_data {
     my $url  = shift or return;
     my $key  = shift || $url;
     $url .= '.json' unless $url =~ /[.]json$/;
-    my $data = eval { $self->get($url => { key => $self->api_key_as($self->who) } )->parse_response } or return;
+    my $data = eval {
+        $self->get(
+            $url => {
+                key => $self->api_key_as($self->who),
+                limit => 100,
+            },
+        )->parse_response;
+    } or return;
     return $data->{$key};
 }
 
