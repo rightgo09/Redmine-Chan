@@ -1,12 +1,12 @@
 package Redmine::Chan::API;
 use strict;
 use warnings;
+use utf8;
 
 use base qw(WebService::Simple);
 
 use JSON;
 use URI;
-use Encode qw/decode_utf8/;
 
 my @keys;
 
@@ -44,7 +44,14 @@ sub get_data {
     my $url  = shift or return;
     my $key  = shift || $url;
     $url .= '.json' unless $url =~ /[.]json$/;
-    my $data = eval { $self->get($url => { key => $self->api_key_as($self->who) } )->parse_response } or return;
+    my $data = eval {
+        $self->get(
+            $url => {
+                key => $self->api_key_as($self->who),
+                limit => 100,
+            },
+        )->parse_response;
+    } or return;
     return $data->{$key};
 }
 
@@ -185,10 +192,24 @@ sub create_issue {
     my $issue = {};
     ($msg, $issue) = $self->detect_issue($msg);
     length($msg) or return;
+    if (! defined $issue->{due_date}) {
+        my ($d, $m, $y) = (localtime)[3,4,5];
+        $m += 1;
+        $y += 1900;
+        $issue->{due_date} = sprintf('%04d-%02d-%02d', $y, $m, $d);
+    }
     $issue = {
         %$issue,
-        project_id => $project_id,
-        subject    => $msg,
+        project_id  => $project_id,
+        subject     => $msg,
+        priority_id => 7,      # 優先度MAX
+        estimated_hours => 3,  # 予定工数
+        description => <<"...",
+* 発端
+** *[自動生成]* あばばばばばば
+* ゴール
+** *[自動生成]* $msg すること
+...
     };
 
     my $res = eval { $self->post(

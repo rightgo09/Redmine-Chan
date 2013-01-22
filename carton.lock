@@ -8,7 +8,7 @@
                "unknown"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "unknown"
             ],
@@ -26,12 +26,12 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -42,7 +42,7 @@
                      "JSON" : "2.09",
                      "JSON::XS" : "2.2",
                      "Net::SSLeay" : "1.33",
-                     "Task::Weaken" : 0
+                     "Task::Weaken" : "0"
                   },
                   "requires" : {}
                }
@@ -203,7 +203,7 @@
                "Robin Redeker <elmex@ta-sa.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -221,22 +221,22 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
                      "AnyEvent" : "5.111",
-                     "Encode" : 0,
+                     "Encode" : "0",
                      "Object::Event" : "0.6",
-                     "Scalar::Util" : 0,
-                     "Test::More" : 0,
-                     "common::sense" : 0
+                     "Scalar::Util" : "0",
+                     "Test::More" : "0",
+                     "common::sense" : "0"
                   }
                }
             },
@@ -271,7 +271,7 @@
                "Marty Pauley <marty+perl@kasei.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -283,7 +283,7 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -322,7 +322,7 @@
                "Copyright (C) 2008 - 2010 Kazuho Oku"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 1.00, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Module::Install version 1.00, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -379,7 +379,7 @@
                "Daisuke Maki C<< <daisuke@endeworks.jp> >> - Stole the code from Catalyst and repackaged it"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 0.77, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Module::Install version 0.77, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -397,14 +397,14 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
-                     "Class::Data::Inheritable" : 0,
-                     "ExtUtils::MakeMaker" : "6.62",
-                     "Test::More" : 0
+                     "Class::Data::Inheritable" : "0",
+                     "ExtUtils::MakeMaker" : "6.64",
+                     "Test::More" : "0"
                   }
                }
             },
@@ -435,7 +435,7 @@
                "unknown"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -447,7 +447,7 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -476,7 +476,7 @@
                "Adam Kennedy <adamk@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 1.04, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Module::Install version 1.04, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -495,7 +495,7 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : "6.62",
+                     "ExtUtils::MakeMaker" : "6.64",
                      "Test::More" : "0.47"
                   }
                },
@@ -547,7 +547,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -565,22 +565,22 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "Test" : 0
+                     "Test" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "recommends" : {
-                     "I18N::Langinfo" : 0,
-                     "Win32::Console" : 0
+                     "I18N::Langinfo" : "0",
+                     "Win32::Console" : "0"
                   },
                   "requires" : {
                      "Encode" : "2",
-                     "Encode::Alias" : 0,
+                     "Encode::Alias" : "0",
                      "perl" : "5.008"
                   }
                }
@@ -605,14 +605,14 @@
          "version" : "1.03"
       },
       "ExtUtils::MakeMaker" : {
-         "dist" : "ExtUtils-MakeMaker-6.62",
+         "dist" : "ExtUtils-MakeMaker-6.64",
          "mymeta" : {
             "abstract" : "Create a module Makefile",
             "author" : [
                "Michael G Schwern <schwern@pobox.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -636,7 +636,7 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "Data::Dumper" : 0
+                     "Data::Dumper" : "0"
                   }
                },
                "configure" : {
@@ -644,10 +644,10 @@
                },
                "runtime" : {
                   "requires" : {
-                     "DirHandle" : 0,
-                     "File::Basename" : 0,
+                     "DirHandle" : "0",
+                     "File::Basename" : "0",
                      "File::Spec" : "0.8",
-                     "Pod::Man" : 0,
+                     "Pod::Man" : "0",
                      "perl" : "5.006"
                   }
                }
@@ -657,7 +657,7 @@
                "bugtracker" : {
                   "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=ExtUtils-MakeMaker"
                },
-               "homepage" : "http://makemaker.org",
+               "homepage" : "https://metacpan.org/release/ExtUtils-MakeMaker",
                "license" : [
                   "http://dev.perl.org/licenses/"
                ],
@@ -666,117 +666,125 @@
                },
                "x_MailingList" : "makemaker@perl.org"
             },
-            "version" : "6.62"
+            "version" : "6.64"
          },
          "name" : "ExtUtils::MakeMaker",
-         "pathname" : "M/MS/MSCHWERN/ExtUtils-MakeMaker-6.62.tar.gz",
+         "pathname" : "M/MS/MSCHWERN/ExtUtils-MakeMaker-6.64.tar.gz",
          "provides" : {
+            "CPAN::Meta::YAML" : {
+               "file" : "CPAN/Meta/YAML.pm",
+               "version" : "0.008"
+            },
             "DynaLoader" : {
                "file" : "ExtUtils/Mkbootstrap.pm"
             },
             "ExtUtils::Command::MM" : {
                "file" : "ExtUtils/Command/MM.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::Liblist" : {
                "file" : "ExtUtils/Liblist.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::Liblist::Kid" : {
                "file" : "ExtUtils/Liblist/Kid.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM" : {
                "file" : "ExtUtils/MM.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_AIX" : {
                "file" : "ExtUtils/MM_AIX.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_Any" : {
                "file" : "ExtUtils/MM_Any.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_BeOS" : {
                "file" : "ExtUtils/MM_BeOS.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_Cygwin" : {
                "file" : "ExtUtils/MM_Cygwin.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_DOS" : {
                "file" : "ExtUtils/MM_DOS.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_Darwin" : {
                "file" : "ExtUtils/MM_Darwin.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_MacOS" : {
                "file" : "ExtUtils/MM_MacOS.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_NW5" : {
                "file" : "ExtUtils/MM_NW5.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_OS2" : {
                "file" : "ExtUtils/MM_OS2.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_QNX" : {
                "file" : "ExtUtils/MM_QNX.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_UWIN" : {
                "file" : "ExtUtils/MM_UWIN.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_Unix" : {
                "file" : "ExtUtils/MM_Unix.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_VMS" : {
                "file" : "ExtUtils/MM_VMS.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_VOS" : {
                "file" : "ExtUtils/MM_VOS.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_Win32" : {
                "file" : "ExtUtils/MM_Win32.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MM_Win95" : {
                "file" : "ExtUtils/MM_Win95.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MY" : {
                "file" : "ExtUtils/MY.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MakeMaker" : {
                "file" : "ExtUtils/MakeMaker.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::MakeMaker::Config" : {
                "file" : "ExtUtils/MakeMaker/Config.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::Mkbootstrap" : {
                "file" : "ExtUtils/Mkbootstrap.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::Mksymlists" : {
                "file" : "ExtUtils/Mksymlists.pm",
-               "version" : "6.62"
+               "version" : "6.64"
             },
             "ExtUtils::testlib" : {
                "file" : "ExtUtils/testlib.pm",
-               "version" : "6.62"
+               "version" : "6.64"
+            },
+            "JSON::PP::Compat5006" : {
+               "file" : "JSON/PP/Compat5006.pm",
+               "version" : "1.09"
             },
             "MM" : {
                "file" : "ExtUtils/MM.pm"
@@ -786,7 +794,7 @@
             }
          },
          "target" : "ExtUtils::MakeMaker",
-         "version" : "6.62"
+         "version" : "6.64"
       },
       "File::Listing" : {
          "dist" : "File-Listing-6.04",
@@ -796,7 +804,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -814,12 +822,12 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -872,7 +880,7 @@
                "Adam Kennedy <adamk@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -940,7 +948,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -958,21 +966,21 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "recommends" : {
-                     "HTTP::Headers" : 0
+                     "HTTP::Headers" : "0"
                   },
                   "requires" : {
                      "HTML::Tagset" : "3",
-                     "XSLoader" : 0,
+                     "XSLoader" : "0",
                      "perl" : "5.008"
                   }
                }
@@ -1029,7 +1037,7 @@
                "Andy Lester <andy@petdance.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "unknown"
             ],
@@ -1041,7 +1049,7 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -1070,7 +1078,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -1088,19 +1096,19 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
                      "HTTP::Date" : "6",
                      "HTTP::Headers::Util" : "6",
-                     "Time::Local" : 0,
+                     "Time::Local" : "0",
                      "perl" : "5.008001"
                   }
                }
@@ -1141,7 +1149,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -1159,12 +1167,12 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -1173,9 +1181,9 @@
                      "HTTP::Request" : "6",
                      "HTTP::Response" : "6",
                      "HTTP::Status" : "6",
-                     "IO::Socket" : 0,
+                     "IO::Socket" : "0",
                      "LWP::MediaTypes" : "6",
-                     "Sys::Hostname" : 0,
+                     "Sys::Hostname" : "0",
                      "perl" : "5.008001"
                   }
                }
@@ -1211,7 +1219,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -1229,20 +1237,20 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "recommends" : {
-                     "Time::Zone" : 0
+                     "Time::Zone" : "0"
                   },
                   "requires" : {
-                     "Time::Local" : 0,
+                     "Time::Local" : "0",
                      "perl" : "5.006002"
                   }
                }
@@ -1275,7 +1283,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -1293,31 +1301,31 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
-                     "Compress::Raw::Zlib" : 0,
+                     "Compress::Raw::Zlib" : "0",
                      "Encode" : "2.21",
                      "Encode::Locale" : "1",
                      "HTTP::Date" : "6",
                      "IO::Compress::Bzip2" : "2.021",
-                     "IO::Compress::Deflate" : 0,
-                     "IO::Compress::Gzip" : 0,
-                     "IO::HTML" : 0,
+                     "IO::Compress::Deflate" : "0",
+                     "IO::Compress::Gzip" : "0",
+                     "IO::HTML" : "0",
                      "IO::Uncompress::Bunzip2" : "2.021",
-                     "IO::Uncompress::Gunzip" : 0,
-                     "IO::Uncompress::Inflate" : 0,
-                     "IO::Uncompress::RawInflate" : 0,
+                     "IO::Uncompress::Gunzip" : "0",
+                     "IO::Uncompress::Inflate" : "0",
+                     "IO::Uncompress::RawInflate" : "0",
                      "LWP::MediaTypes" : "6",
                      "MIME::Base64" : "2.1",
-                     "MIME::QuotedPrint" : 0,
+                     "MIME::QuotedPrint" : "0",
                      "URI" : "1.10",
                      "perl" : "5.008001"
                   }
@@ -1387,7 +1395,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -1405,12 +1413,12 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -1448,7 +1456,7 @@
                "Christopher J. Madsen <perl@cjmweb.net>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -1460,8 +1468,8 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "File::Temp" : 0,
-                     "Scalar::Util" : 0,
+                     "File::Temp" : "0",
+                     "Scalar::Util" : "0",
                      "Test::More" : "0.88"
                   }
                },
@@ -1472,7 +1480,7 @@
                },
                "runtime" : {
                   "requires" : {
-                     "Carp" : 0,
+                     "Carp" : "0",
                      "Encode" : "2.10",
                      "Exporter" : "5.57"
                   }
@@ -1690,7 +1698,7 @@
                "Makamaka Hannyaharamitu, E<lt>makamaka[at]cpan.orgE<gt>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -1708,17 +1716,17 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
-                     "Test::More" : 0
+                     "Test::More" : "0"
                   }
                }
             },
@@ -1774,7 +1782,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -1792,27 +1800,27 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "recommends" : {
                      "Authen::NTLM" : "1.02",
-                     "Data::Dump" : 0,
+                     "Data::Dump" : "0",
                      "LWP::Protocol::https" : "6.02"
                   },
                   "requires" : {
-                     "Digest::MD5" : 0,
+                     "Digest::MD5" : "0",
                      "Encode" : "2.12",
-                     "Encode::Locale" : 0,
+                     "Encode::Locale" : "0",
                      "File::Listing" : "6",
-                     "HTML::Entities" : 0,
-                     "HTML::HeadParser" : 0,
+                     "HTML::Entities" : "0",
+                     "HTML::HeadParser" : "0",
                      "HTTP::Cookies" : "6",
                      "HTTP::Daemon" : "6",
                      "HTTP::Date" : "6",
@@ -1821,14 +1829,14 @@
                      "HTTP::Request::Common" : "6",
                      "HTTP::Response" : "6",
                      "HTTP::Status" : "6",
-                     "IO::Select" : 0,
-                     "IO::Socket" : 0,
+                     "IO::Select" : "0",
+                     "IO::Socket" : "0",
                      "LWP::MediaTypes" : "6",
                      "MIME::Base64" : "2.1",
                      "Net::FTP" : "2.58",
                      "Net::HTTP" : "6",
                      "URI" : "1.10",
-                     "URI::Escape" : 0,
+                     "URI::Escape" : "0",
                      "WWW::RobotRules" : "6",
                      "perl" : "5.008001"
                   }
@@ -1943,7 +1951,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -1961,12 +1969,12 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -2003,7 +2011,7 @@
                "Adam Kennedy <adamk@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -2226,7 +2234,7 @@
                "Ricardo Signes <rjbs@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 0.68, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Module::Install version 0.68, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -2244,12 +2252,12 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
-                     "Module::Install" : 0
+                     "Module::Install" : "0"
                   }
                }
             },
@@ -2275,7 +2283,7 @@
                "Tatsuhiko Miyagawa <miyagawa@bulknews.net>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 0.91, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Module::Install version 0.91, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -2294,7 +2302,7 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
@@ -2305,9 +2313,9 @@
                "runtime" : {
                   "requires" : {
                      "ExtUtils::MakeMaker" : "6.42",
-                     "Filter::Util::Call" : 0,
-                     "Path::Class" : 0,
-                     "Test::More" : 0
+                     "Filter::Util::Call" : "0",
+                     "Path::Class" : "0",
+                     "Test::More" : "0"
                   }
                }
             },
@@ -2342,7 +2350,7 @@
                "Audrey Tang <cpan@audreyt.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -2360,22 +2368,22 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : "6.62",
-                     "Test::More" : 0
+                     "ExtUtils::MakeMaker" : "6.6302",
+                     "Test::More" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
-                     "File::Spec" : 0,
-                     "File::Temp" : 0,
-                     "Module::Build::ModuleInfo" : 0,
+                     "File::Spec" : "0",
+                     "File::Temp" : "0",
+                     "Module::Build::ModuleInfo" : "0",
                      "perl" : "5.008001",
-                     "version" : 0
+                     "version" : "0"
                   }
                }
             },
@@ -2407,7 +2415,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -2425,12 +2433,12 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -2438,10 +2446,10 @@
                      "IO::Socket::SSL" : "1.38"
                   },
                   "requires" : {
-                     "Compress::Raw::Zlib" : 0,
-                     "IO::Compress::Gzip" : 0,
-                     "IO::Select" : 0,
-                     "IO::Socket::INET" : 0,
+                     "Compress::Raw::Zlib" : "0",
+                     "IO::Compress::Gzip" : "0",
+                     "IO::Select" : "0",
+                     "IO::Socket::INET" : "0",
                      "perl" : "5.006002"
                   }
                }
@@ -2486,7 +2494,7 @@
                "Robin Redeker <elmex@x-paste.de>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -2504,19 +2512,19 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
                      "AnyEvent" : "3.5",
-                     "Test::More" : 0,
-                     "common::sense" : 0
+                     "Test::More" : "0",
+                     "common::sense" : "0"
                   }
                }
             },
@@ -2542,7 +2550,7 @@
                "Audrey Tang <cpan@audreyt.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.58, CPAN::Meta::Converter version 2.110930, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.58, CPAN::Meta::Converter version 2.110930, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "unknown"
             ],
@@ -2560,20 +2568,20 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
-                     "File::Find" : 0,
-                     "File::Path" : 0,
-                     "File::Spec" : 0,
-                     "File::Temp" : 0
+                     "File::Find" : "0",
+                     "File::Path" : "0",
+                     "File::Spec" : "0",
+                     "File::Temp" : "0"
                   }
                }
             },
@@ -2599,7 +2607,7 @@
                "Ken Williams <kwilliams@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Module::Build version 0.3901, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -2612,9 +2620,9 @@
                "build" : {
                   "requires" : {
                      "Module::Build" : "0.3601",
-                     "Test" : 0,
-                     "Test::More" : 0,
-                     "warnings" : 0
+                     "Test" : "0",
+                     "Test::More" : "0",
+                     "warnings" : "0"
                   }
                },
                "configure" : {
@@ -2625,18 +2633,18 @@
                },
                "runtime" : {
                   "requires" : {
-                     "Carp" : 0,
-                     "Cwd" : 0,
-                     "Exporter" : 0,
-                     "File::Path" : 0,
+                     "Carp" : "0",
+                     "Cwd" : "0",
+                     "Exporter" : "0",
+                     "File::Path" : "0",
                      "File::Spec" : "0.87",
-                     "File::Temp" : 0,
-                     "File::stat" : 0,
-                     "IO::Dir" : 0,
-                     "IO::File" : 0,
-                     "base" : 0,
-                     "overload" : 0,
-                     "strict" : 0
+                     "File::Temp" : "0",
+                     "File::stat" : "0",
+                     "IO::Dir" : "0",
+                     "IO::File" : "0",
+                     "base" : "0",
+                     "overload" : "0",
+                     "strict" : "0"
                   }
                }
             },
@@ -2683,7 +2691,7 @@
                "Michael G Schwern <schwern@pobox.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.50, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.50, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -2704,12 +2712,12 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -2754,7 +2762,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -2772,19 +2780,19 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0,
-                     "Test" : 0,
-                     "Test::More" : 0
+                     "ExtUtils::MakeMaker" : "0",
+                     "Test" : "0",
+                     "Test::More" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "recommends" : {
-                     "Business::ISBN" : 0
+                     "Business::ISBN" : "0"
                   },
                   "requires" : {
                      "MIME::Base64" : "2",
@@ -2950,7 +2958,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -2968,18 +2976,18 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
-                     "AnyDBM_File" : 0,
-                     "Fcntl" : 0,
+                     "AnyDBM_File" : "0",
+                     "Fcntl" : "0",
                      "URI" : "1.10",
                      "perl" : "5.008001"
                   }
@@ -3020,7 +3028,7 @@
                "Yusuke Wada  C<< <yusuke@kamawada.com> >>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 1.00, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Module::Install version 1.00, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -3050,22 +3058,22 @@
                },
                "runtime" : {
                   "recommends" : {
-                     "XML::Feed" : 0,
-                     "XML::LibXML" : 0,
-                     "XML::Parser::Lite::Tree" : 0,
-                     "XML::Parser::Lite::Tree::XPath" : 0
+                     "XML::Feed" : "0",
+                     "XML::LibXML" : "0",
+                     "XML::Parser::Lite::Tree" : "0",
+                     "XML::Parser::Lite::Tree::XPath" : "0"
                   },
                   "requires" : {
-                     "Class::Accessor::Fast" : 0,
-                     "Class::Data::ConfigHash" : 0,
-                     "Class::Inspector" : 0,
-                     "Data::Dumper" : 0,
-                     "Digest::MD5" : 0,
+                     "Class::Accessor::Fast" : "0",
+                     "Class::Data::ConfigHash" : "0",
+                     "Class::Inspector" : "0",
+                     "Data::Dumper" : "0",
+                     "Digest::MD5" : "0",
                      "JSON" : "2.0",
-                     "LWP::UserAgent" : 0,
-                     "UNIVERSAL::require" : 0,
+                     "LWP::UserAgent" : "0",
+                     "UNIVERSAL::require" : "0",
                      "URI" : "1.36",
-                     "XML::Simple" : 0
+                     "XML::Simple" : "0"
                   }
                }
             },
@@ -3118,7 +3126,7 @@
                "Robin Berjon, robin@knowscape.com, with lots of it having been done"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 0.95, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Module::Install version 0.95, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -3180,7 +3188,7 @@
                "Clark Cooper (coopercc@netheaven.com)"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -3198,17 +3206,17 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
-                     "LWP" : 0,
+                     "LWP" : "0",
                      "perl" : "5.00405"
                   }
                }
@@ -3259,7 +3267,7 @@
                "unknown"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.55_02, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.55_02, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "unknown"
             ],
@@ -3277,17 +3285,17 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
                   "requires" : {
-                     "File::Temp" : 0,
+                     "File::Temp" : "0",
                      "XML::NamespaceSupport" : "0.03",
                      "XML::SAX::Base" : "1.05"
                   }
@@ -3347,7 +3355,7 @@
                "Grant McLean <grantm@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.101670, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.101670, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -3369,13 +3377,19 @@
                },
                "runtime" : {
                   "requires" : {}
+               },
+               "test" : {
+                  "requires" : {
+                     "Test::More" : "0.88"
+                  }
                }
             },
             "release_status" : "stable",
             "resources" : {
                "repository" : {
                   "type" : "git",
-                  "url" : "git://github.com/grantm/XML-SAX-Base.git"
+                  "url" : "git://github.com/grantm/XML-SAX-Base.git",
+                  "web" : "http://github.com/grantm/XML-SAX-Base"
                }
             },
             "version" : "1.08"
@@ -3407,7 +3421,7 @@
                "Robin Berjon"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.44, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.44, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -3419,7 +3433,7 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -3453,7 +3467,7 @@
                "Grant McLean <grantm@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.101670, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.101670, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -3477,7 +3491,12 @@
                   "requires" : {
                      "XML::NamespaceSupport" : "1.04",
                      "XML::SAX" : "0.15",
-                     "XML::SAX::Expat" : 0
+                     "XML::SAX::Expat" : "0"
+                  }
+               },
+               "test" : {
+                  "requires" : {
+                     "Test::More" : "0.88"
                   }
                }
             },
@@ -3485,7 +3504,8 @@
             "resources" : {
                "repository" : {
                   "type" : "git",
-                  "url" : "git://github.com/grantm/xml-simple.git"
+                  "url" : "git://github.com/grantm/xml-simple.git",
+                  "web" : "http://github.com/grantm/xml-simple"
                }
             },
             "version" : "2.20"
@@ -3509,7 +3529,7 @@
                "Adam Kennedy <adamk@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "perl_5"
             ],
@@ -3533,7 +3553,7 @@
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
@@ -3572,7 +3592,7 @@
                "unknown"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150",
+            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.120630",
             "license" : [
                "unknown"
             ],
@@ -3590,12 +3610,12 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : 0
+                     "ExtUtils::MakeMaker" : "0"
                   }
                },
                "runtime" : {
