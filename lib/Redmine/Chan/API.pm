@@ -206,9 +206,9 @@ sub create_issue {
         estimated_hours => 3,  # 予定工数
         description => <<"...",
 * 発端
-** *[自動生成]* あばばばばばば
+** 
 * ゴール
-** *[自動生成]* $msg すること
+** 
 ...
     };
 
