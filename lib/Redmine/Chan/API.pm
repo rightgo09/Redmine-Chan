@@ -10,6 +10,7 @@ package Redmine::Chan::API {
     @REGEXES = map $_.'_regexp_hash', @KEYS;
   }
 
+  use List::Util qw/ first /;
   use JSON;
 
   use base qw(WebService::Simple);
@@ -198,8 +199,14 @@ package Redmine::Chan::API {
       $y += 1900;
       $issue->{due_date} = sprintf('%04d-%02d-%02d', $y, $m, $d);
     }
+
+    if (! defined $issue->{assigned_to_id}) {
+      if (my $user = first { $_->{login} eq $self->who } @{$self->users}) {
+        $issue->{assigned_to_id} = $user->{id};
+      }
+    }
+
     $issue = {
-      %$issue,
       project_id  => $project_id,
       subject   => $msg,
       #priority_id => 7,    # 優先度MAX
@@ -210,6 +217,7 @@ package Redmine::Chan::API {
   * ゴール
   ** 
 ...
+      %$issue,
     };
 
     my $res = eval { $self->post(
@@ -221,6 +229,7 @@ package Redmine::Chan::API {
         key    => $self->api_key_as($self->who),
       }
     )->parse_response };
+
     return $self->issue_detail($res->{issue}->{id});
   }
 
