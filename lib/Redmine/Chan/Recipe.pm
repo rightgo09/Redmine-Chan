@@ -84,6 +84,8 @@ package Redmine::Chan::Recipe {
       # 何もしない
       # 1行バッファにためる
       $self->buffer($msg);
+      # いまでしょ用チケット番号クリア
+      $self->buffer_issue_id(undef);
       return;
     }
   }
