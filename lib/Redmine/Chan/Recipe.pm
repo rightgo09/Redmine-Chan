@@ -7,6 +7,7 @@ package Redmine::Chan::Recipe {
   has 'nick'     => (is => 'ro', isa => 'Str'               );
   has 'channels' => (is => 'ro', isa => 'HashRef'           );
   has 'buffer'   => (is => 'rw', isa => 'Str'               );
+  has 'buffer_issue_id' => (is => 'rw', isa => 'Maybe[Int]' );
 
   sub cook {
     my ($self, %args) = @_;
@@ -49,6 +50,17 @@ package Redmine::Chan::Recipe {
       my $reply = $api->create_issue($1, $channel->{project_id});
       $notice->($reply);
       $reply =~ m|/(\d+) |;
+      $notice->("じゃあ#${1}をいつやるのか？");
+      $self->buffer_issue_id($1);
+    }
+    # いまでしょ！
+    elsif ($msg =~ /^(いま|今)でしょ(！|!)$/) {
+      if (my $issue_id = $self->buffer_issue_id) {
+        $self->buffer_issue_id(undef);
+        # FIXME: 優先度ハードコードを直す
+        $api->put($issue_id, { priority_id => 7 });
+        $notice->("終わらずに帰れると思うなよ");
+      }
     }
     # note 追加
     elsif ($msg =~ /^(.+?)\s*>\s*\#(\d+)$/) {
