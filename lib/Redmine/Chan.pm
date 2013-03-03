@@ -93,6 +93,10 @@ package Redmine::Chan {
     return sub {
       my ($irc, $channel, $ircmsg) = @_;
       my (undef, $who) = $irc->split_nick_mode($ircmsg->{prefix});
+
+      # Jenkinsのビルド番号除外
+      return if $who =~ /jenkins/i;
+
       my $msg = $self->recipe->cook(
         irc     => $irc,
         channel => $channel,
