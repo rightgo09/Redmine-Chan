@@ -18,6 +18,7 @@ my $builder = Module::Build->new(
         'WebService::Simple'    => 0,
         'JSON' => 0,
         'URI'  => 0,
+        'Mouse' => 0,
     },
     add_to_cleanup      => [ 'Redmine-Chan-*' ],
 );

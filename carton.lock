@@ -1,14 +1,14 @@
 {
    "modules" : {
       "AnyEvent" : {
-         "dist" : "AnyEvent-7.02",
+         "dist" : "AnyEvent-7.04",
          "mymeta" : {
             "abstract" : "unknown",
             "author" : [
                "unknown"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "unknown"
             ],
@@ -48,10 +48,10 @@
                }
             },
             "release_status" : "stable",
-            "version" : "7.02"
+            "version" : "7.04"
          },
          "name" : "AnyEvent",
-         "pathname" : "M/ML/MLEHMANN/AnyEvent-7.02.tar.gz",
+         "pathname" : "M/ML/MLEHMANN/AnyEvent-7.04.tar.gz",
          "provides" : {
             "AE" : {
                "file" : "AE.pm",
@@ -68,7 +68,7 @@
             },
             "AnyEvent" : {
                "file" : "AnyEvent.pm",
-               "version" : "7.02"
+               "version" : "7.04"
             },
             "AnyEvent::Base" : {
                "file" : "AnyEvent.pm"
@@ -193,7 +193,7 @@
             }
          },
          "target" : "AnyEvent",
-         "version" : "7.02"
+         "version" : "7.04"
       },
       "AnyEvent::IRC" : {
          "dist" : "AnyEvent-IRC-0.96",
@@ -203,7 +203,7 @@
                "Robin Redeker <elmex@ta-sa.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -271,7 +271,7 @@
                "Marty Pauley <marty+perl@kasei.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -322,7 +322,7 @@
                "Copyright (C) 2008 - 2010 Kazuho Oku"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 1.00, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Install version 1.00, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -379,7 +379,7 @@
                "Daisuke Maki C<< <daisuke@endeworks.jp> >> - Stole the code from Catalyst and repackaged it"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 0.77, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Install version 0.77, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -435,7 +435,7 @@
                "unknown"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -469,14 +469,14 @@
          "version" : "0.08"
       },
       "Class::Inspector" : {
-         "dist" : "Class-Inspector-1.27",
+         "dist" : "Class-Inspector-1.28",
          "mymeta" : {
             "abstract" : "Get information about a class and its structure",
             "author" : [
                "Adam Kennedy <adamk@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 1.04, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -495,13 +495,13 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : "6.64",
+                     "ExtUtils::MakeMaker" : "6.59",
                      "Test::More" : "0.47"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : "6.62"
+                     "ExtUtils::MakeMaker" : "6.59"
                   }
                },
                "runtime" : {
@@ -521,23 +521,23 @@
                },
                "x_ChangeLog" : "http://fisheye2.atlassian.com/changelog/cpan/trunk/Class-Inspector"
             },
-            "version" : "1.27",
+            "version" : "1.28",
             "x_module_name" : "Class::Inspector"
          },
          "name" : "Class::Inspector",
-         "pathname" : "A/AD/ADAMK/Class-Inspector-1.27.tar.gz",
+         "pathname" : "A/AD/ADAMK/Class-Inspector-1.28.tar.gz",
          "provides" : {
             "Class::Inspector" : {
                "file" : "Class/Inspector.pm",
-               "version" : "1.27"
+               "version" : "1.28"
             },
             "Class::Inspector::Functions" : {
                "file" : "Class/Inspector/Functions.pm",
-               "version" : "1.27"
+               "version" : "1.28"
             }
          },
          "target" : "Class::Inspector",
-         "version" : "1.27"
+         "version" : "1.28"
       },
       "Encode::Locale" : {
          "dist" : "Encode-Locale-1.03",
@@ -547,7 +547,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -612,7 +612,7 @@
                "Michael G Schwern <schwern@pobox.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -671,10 +671,6 @@
          "name" : "ExtUtils::MakeMaker",
          "pathname" : "M/MS/MSCHWERN/ExtUtils-MakeMaker-6.64.tar.gz",
          "provides" : {
-            "CPAN::Meta::YAML" : {
-               "file" : "CPAN/Meta/YAML.pm",
-               "version" : "0.008"
-            },
             "DynaLoader" : {
                "file" : "ExtUtils/Mkbootstrap.pm"
             },
@@ -782,10 +778,6 @@
                "file" : "ExtUtils/testlib.pm",
                "version" : "6.64"
             },
-            "JSON::PP::Compat5006" : {
-               "file" : "JSON/PP/Compat5006.pm",
-               "version" : "1.09"
-            },
             "MM" : {
                "file" : "ExtUtils/MM.pm"
             },
@@ -804,7 +796,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -880,7 +872,7 @@
                "Adam Kennedy <adamk@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -948,7 +940,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -1037,7 +1029,7 @@
                "Andy Lester <andy@petdance.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "unknown"
             ],
@@ -1078,7 +1070,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -1149,7 +1141,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -1219,7 +1211,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -1276,14 +1268,14 @@
          "version" : "6.02"
       },
       "HTTP::Message" : {
-         "dist" : "HTTP-Message-6.04",
+         "dist" : "HTTP-Message-6.06",
          "mymeta" : {
             "abstract" : "HTTP style messages",
             "author" : [
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -1338,10 +1330,10 @@
                },
                "x_MailingList" : "mailto:libwww@perl.org"
             },
-            "version" : "6.04"
+            "version" : "6.06"
          },
          "name" : "HTTP::Message",
-         "pathname" : "G/GA/GAAS/HTTP-Message-6.04.tar.gz",
+         "pathname" : "G/GA/GAAS/HTTP-Message-6.06.tar.gz",
          "provides" : {
             "HTTP::Config" : {
                "file" : "HTTP/Config.pm",
@@ -1349,7 +1341,7 @@
             },
             "HTTP::Headers" : {
                "file" : "HTTP/Headers.pm",
-               "version" : "6.04"
+               "version" : "6.05"
             },
             "HTTP::Headers::Auth" : {
                "file" : "HTTP/Headers/Auth.pm",
@@ -1365,7 +1357,7 @@
             },
             "HTTP::Message" : {
                "file" : "HTTP/Message.pm",
-               "version" : "6.04"
+               "version" : "6.06"
             },
             "HTTP::Request" : {
                "file" : "HTTP/Request.pm",
@@ -1385,7 +1377,7 @@
             }
          },
          "target" : "HTTP::Status",
-         "version" : "6.04"
+         "version" : "6.06"
       },
       "HTTP::Negotiate" : {
          "dist" : "HTTP-Negotiate-6.01",
@@ -1395,7 +1387,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -1449,14 +1441,14 @@
          "version" : "6.01"
       },
       "IO::HTML" : {
-         "dist" : "IO-HTML-0.04",
+         "dist" : "IO-HTML-1.00",
          "mymeta" : {
             "abstract" : "Open an HTML file with automatic charset detection",
             "author" : [
                "Christopher J. Madsen <perl@cjmweb.net>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -1478,11 +1470,25 @@
                      "ExtUtils::MakeMaker" : "6.30"
                   }
                },
+               "develop" : {
+                  "requires" : {
+                     "Pod::Coverage::TrustPod" : "0",
+                     "Test::Pod" : "1.41",
+                     "Test::Pod::Coverage" : "1.08"
+                  }
+               },
                "runtime" : {
                   "requires" : {
                      "Carp" : "0",
                      "Encode" : "2.10",
                      "Exporter" : "5.57"
+                  }
+               },
+               "test" : {
+                  "requires" : {
+                     "File::Temp" : "0",
+                     "Scalar::Util" : "0",
+                     "Test::More" : "0.88"
                   }
                }
             },
@@ -1490,11 +1496,15 @@
             "resources" : {
                "repository" : {
                   "type" : "git",
-                  "url" : "git://github.com/madsen/io-html.git"
+                  "url" : "git://github.com/madsen/io-html.git",
+                  "web" : "http://github.com/madsen/io-html"
                }
             },
-            "version" : "0.04",
+            "version" : "1.00",
             "x_Dist_Zilla" : {
+               "perl" : {
+                  "version" : "5.014002"
+               },
                "plugins" : [
                   {
                      "class" : "Dist::Zilla::Plugin::VersionFromModule",
@@ -1504,32 +1514,32 @@
                   {
                      "class" : "Dist::Zilla::Plugin::GatherDir",
                      "name" : "CJM/GatherDir",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::PruneCruft",
                      "name" : "CJM/PruneCruft",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::ManifestSkip",
                      "name" : "CJM/ManifestSkip",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::MetaJSON",
                      "name" : "CJM/MetaJSON",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::MetaYAML",
                      "name" : "CJM/MetaYAML",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::License",
                      "name" : "CJM/License",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::Test::PrereqsFromMeta",
@@ -1539,22 +1549,22 @@
                   {
                      "class" : "Dist::Zilla::Plugin::PodSyntaxTests",
                      "name" : "CJM/PodSyntaxTests",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::PodCoverageTests",
                      "name" : "CJM/PodCoverageTests",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::ExtraTests",
                      "name" : "CJM/ExtraTests",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::PodLoom",
                      "config" : {
-                        "Pod::Loom version" : "0.05"
+                        "Pod::Loom version" : "0.06"
                      },
                      "name" : "CJM/PodLoom",
                      "version" : "4.10"
@@ -1562,12 +1572,12 @@
                   {
                      "class" : "Dist::Zilla::Plugin::MakeMaker",
                      "name" : "CJM/MakeMaker",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::MetaConfig",
                      "name" : "CJM/MetaConfig",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::MatchManifest",
@@ -1592,7 +1602,7 @@
                   {
                      "class" : "Dist::Zilla::Plugin::TemplateCJM",
                      "name" : "CJM/TemplateCJM",
-                     "version" : "4.00"
+                     "version" : "4.12"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::Repository",
@@ -1602,32 +1612,32 @@
                   {
                      "class" : "Dist::Zilla::Plugin::Git::Check",
                      "name" : "CJM/@Git/Check",
-                     "version" : "1.112510"
+                     "version" : "2.005"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::Git::Commit",
                      "name" : "CJM/@Git/Commit",
-                     "version" : "1.112510"
+                     "version" : "2.005"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::Git::Tag",
                      "name" : "CJM/@Git/Tag",
-                     "version" : "1.112510"
+                     "version" : "2.005"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::Git::Push",
                      "name" : "CJM/@Git/Push",
-                     "version" : "1.112510"
+                     "version" : "2.005"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::TestRelease",
                      "name" : "CJM/TestRelease",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::UploadToCPAN",
                      "name" : "CJM/UploadToCPAN",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::ArchiveRelease",
@@ -1637,37 +1647,37 @@
                   {
                      "class" : "Dist::Zilla::Plugin::AutoPrereqs",
                      "name" : "AutoPrereqs",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::FinderCode",
                      "name" : ":InstallModules",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::FinderCode",
                      "name" : ":IncModules",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::FinderCode",
                      "name" : ":TestFiles",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::FinderCode",
                      "name" : ":ExecFiles",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::FinderCode",
                      "name" : ":ShareFiles",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   },
                   {
                      "class" : "Dist::Zilla::Plugin::FinderCode",
                      "name" : ":MainModule",
-                     "version" : "4.300006"
+                     "version" : "4.300029"
                   }
                ],
                "zilla" : {
@@ -1675,20 +1685,20 @@
                   "config" : {
                      "is_trial" : "0"
                   },
-                  "version" : "4.300006"
+                  "version" : "4.300029"
                }
             }
          },
          "name" : "IO::HTML",
-         "pathname" : "C/CJ/CJM/IO-HTML-0.04.tar.gz",
+         "pathname" : "C/CJ/CJM/IO-HTML-1.00.tar.gz",
          "provides" : {
             "IO::HTML" : {
                "file" : "IO/HTML.pm",
-               "version" : "0.04"
+               "version" : "1.00"
             }
          },
          "target" : "IO::HTML",
-         "version" : "0.04"
+         "version" : "1.00"
       },
       "JSON" : {
          "dist" : "JSON-2.53",
@@ -1698,7 +1708,7 @@
                "Makamaka Hannyaharamitu, E<lt>makamaka[at]cpan.orgE<gt>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -1782,7 +1792,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -1951,7 +1961,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -2011,7 +2021,7 @@
                "Adam Kennedy <adamk@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -2234,7 +2244,7 @@
                "Ricardo Signes <rjbs@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 0.68, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Install version 0.68, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -2283,7 +2293,7 @@
                "Tatsuhiko Miyagawa <miyagawa@bulknews.net>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 0.91, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Install version 0.91, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -2343,14 +2353,14 @@
          "version" : "0.06"
       },
       "Module::ScanDeps" : {
-         "dist" : "Module-ScanDeps-1.09",
+         "dist" : "Module-ScanDeps-1.10",
          "mymeta" : {
             "abstract" : "Recursively scan Perl code for dependencies",
             "author" : [
                "Audrey Tang <cpan@audreyt.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -2361,20 +2371,24 @@
             "name" : "Module-ScanDeps",
             "no_index" : {
                "directory" : [
-                  "t",
-                  "inc"
+                  "inc",
+                  "t"
+               ],
+               "x_module" : [
+                  "Module::ScanDeps::Cache",
+                  "Module::ScanDeps::DataFeed"
                ]
             },
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : "6.6302",
+                     "ExtUtils::MakeMaker" : "6.59",
                      "Test::More" : "0"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
+                     "ExtUtils::MakeMaker" : "6.59"
                   }
                },
                "runtime" : {
@@ -2388,14 +2402,22 @@
                }
             },
             "release_status" : "stable",
-            "version" : "1.09"
+            "resources" : {
+               "license" : [
+                  "http://dev.perl.org/licenses/"
+               ],
+               "repository" : {
+                  "url" : "http://svn.openfoundry.org/par/Module-ScanDeps/trunk/"
+               }
+            },
+            "version" : "1.10"
          },
          "name" : "Module::ScanDeps",
-         "pathname" : "R/RS/RSCHUPP/Module-ScanDeps-1.09.tar.gz",
+         "pathname" : "R/RS/RSCHUPP/Module-ScanDeps-1.10.tar.gz",
          "provides" : {
             "Module::ScanDeps" : {
                "file" : "Module/ScanDeps.pm",
-               "version" : "1.09"
+               "version" : "1.10"
             },
             "Module::ScanDeps::Cache" : {
                "file" : "Module/ScanDeps/Cache.pm"
@@ -2405,17 +2427,178 @@
             }
          },
          "target" : "Module::ScanDeps",
-         "version" : "1.09"
+         "version" : "1.10"
+      },
+      "Mouse" : {
+         "dist" : "Mouse-1.05",
+         "mymeta" : {
+            "abstract" : "Moose minus the antlers",
+            "author" : [
+               "Shawn M Moore <sartak at gmail.com>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120921",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Mouse",
+            "no_index" : {
+               "directory" : [
+                  "example",
+                  "inc",
+                  "t",
+                  "xt"
+               ]
+            },
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "Devel::PPPort" : "3.19",
+                     "ExtUtils::MakeMaker" : "6.59",
+                     "ExtUtils::ParseXS" : "2.21",
+                     "Test::More" : "0.88"
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "Devel::PPPort" : "3.19",
+                     "ExtUtils::MakeMaker" : "6.59",
+                     "ExtUtils::ParseXS" : "2.21"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Scalar::Util" : "1.14",
+                     "XSLoader" : "0.02",
+                     "perl" : "5.006002"
+                  }
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "license" : [
+                  "http://dev.perl.org/licenses/"
+               ],
+               "repository" : {
+                  "type" : "git",
+                  "url" : "git://github.com/gfx/p5-Mouse.git"
+               }
+            },
+            "version" : "1.05",
+            "x_module_name" : "Mouse"
+         },
+         "name" : "Mouse",
+         "pathname" : "G/GF/GFUJI/Mouse-1.05.tar.gz",
+         "provides" : {
+            "Mouse" : {
+               "file" : "Mouse.pm",
+               "version" : "1.05"
+            },
+            "Mouse::Exporter" : {
+               "file" : "Mouse/Exporter.pm"
+            },
+            "Mouse::Meta::Attribute" : {
+               "file" : "Mouse/Meta/Attribute.pm"
+            },
+            "Mouse::Meta::Class" : {
+               "file" : "Mouse/Meta/Class.pm"
+            },
+            "Mouse::Meta::Method" : {
+               "file" : "Mouse/Meta/Method.pm"
+            },
+            "Mouse::Meta::Method::Accessor" : {
+               "file" : "Mouse/Meta/Method/Accessor.pm"
+            },
+            "Mouse::Meta::Method::Constructor" : {
+               "file" : "Mouse/Meta/Method/Constructor.pm"
+            },
+            "Mouse::Meta::Method::Delegation" : {
+               "file" : "Mouse/Meta/Method/Delegation.pm"
+            },
+            "Mouse::Meta::Method::Destructor" : {
+               "file" : "Mouse/Meta/Method/Destructor.pm"
+            },
+            "Mouse::Meta::Module" : {
+               "file" : "Mouse/Meta/Module.pm"
+            },
+            "Mouse::Meta::Role" : {
+               "file" : "Mouse/Meta/Role.pm"
+            },
+            "Mouse::Meta::Role::Application" : {
+               "file" : "Mouse/Meta/Role/Application.pm"
+            },
+            "Mouse::Meta::Role::Application::RoleSummation" : {
+               "file" : "Mouse/Tiny.pm"
+            },
+            "Mouse::Meta::Role::Composite" : {
+               "file" : "Mouse/Meta/Role/Composite.pm"
+            },
+            "Mouse::Meta::Role::Method" : {
+               "file" : "Mouse/Meta/Role/Method.pm"
+            },
+            "Mouse::Meta::TypeConstraint" : {
+               "file" : "Mouse/Meta/TypeConstraint.pm"
+            },
+            "Mouse::Object" : {
+               "file" : "Mouse/Object.pm"
+            },
+            "Mouse::PurePerl" : {
+               "file" : "Mouse/PurePerl.pm"
+            },
+            "Mouse::Role" : {
+               "file" : "Mouse/Role.pm",
+               "version" : "1.05"
+            },
+            "Mouse::Spec" : {
+               "file" : "Mouse/Spec.pm",
+               "version" : "1.05"
+            },
+            "Mouse::Tiny" : {
+               "file" : "Mouse/Tiny.pm",
+               "version" : "1.05"
+            },
+            "Mouse::TypeRegistry" : {
+               "file" : "Mouse/TypeRegistry.pm"
+            },
+            "Mouse::Util" : {
+               "file" : "Mouse/Util.pm",
+               "version" : "1.05"
+            },
+            "Mouse::Util::MetaRole" : {
+               "file" : "Mouse/Util/MetaRole.pm"
+            },
+            "Mouse::Util::TypeConstraints" : {
+               "file" : "Mouse/Util/TypeConstraints.pm"
+            },
+            "Squirrel" : {
+               "file" : "Squirrel.pm"
+            },
+            "Squirrel::Role" : {
+               "file" : "Squirrel/Role.pm"
+            },
+            "Test::Mouse" : {
+               "file" : "Test/Mouse.pm"
+            },
+            "ouse" : {
+               "file" : "ouse.pm"
+            }
+         },
+         "target" : "Mouse",
+         "version" : "1.05"
       },
       "Net::HTTP" : {
-         "dist" : "Net-HTTP-6.03",
+         "dist" : "Net-HTTP-6.05",
          "mymeta" : {
             "abstract" : "Low-level HTTP connection (client)",
             "author" : [
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -2461,30 +2644,30 @@
                },
                "x_MailingList" : "mailto:libwww@perl.org"
             },
-            "version" : "6.03"
+            "version" : "6.05"
          },
          "name" : "Net::HTTP",
-         "pathname" : "G/GA/GAAS/Net-HTTP-6.03.tar.gz",
+         "pathname" : "G/GA/GAAS/Net-HTTP-6.05.tar.gz",
          "provides" : {
             "Net::HTTP" : {
                "file" : "Net/HTTP.pm",
-               "version" : "6.03"
+               "version" : "6.05"
             },
             "Net::HTTP::Methods" : {
                "file" : "Net/HTTP/Methods.pm",
-               "version" : "6.00"
+               "version" : "6.05"
             },
             "Net::HTTP::NB" : {
                "file" : "Net/HTTP/NB.pm",
-               "version" : "6.00"
+               "version" : "6.04"
             },
             "Net::HTTPS" : {
                "file" : "Net/HTTPS.pm",
-               "version" : "6.02"
+               "version" : "6.04"
             }
          },
          "target" : "Net::HTTP",
-         "version" : "6.03"
+         "version" : "6.05"
       },
       "Object::Event" : {
          "dist" : "Object-Event-1.23",
@@ -2494,7 +2677,7 @@
                "Robin Redeker <elmex@x-paste.de>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -2543,14 +2726,14 @@
          "version" : "1.23"
       },
       "PAR::Dist" : {
-         "dist" : "PAR-Dist-0.48",
+         "dist" : "PAR-Dist-0.49",
          "mymeta" : {
             "abstract" : "Create and manipulate PAR distributions",
             "author" : [
                "Audrey Tang <cpan@audreyt.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.58, CPAN::Meta::Converter version 2.110930, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "unknown"
             ],
@@ -2586,28 +2769,28 @@
                }
             },
             "release_status" : "stable",
-            "version" : "0.48"
+            "version" : "0.49"
          },
          "name" : "PAR::Dist",
-         "pathname" : "S/SM/SMUELLER/PAR-Dist-0.48.tar.gz",
+         "pathname" : "R/RS/RSCHUPP/PAR-Dist-0.49.tar.gz",
          "provides" : {
             "PAR::Dist" : {
                "file" : "PAR/Dist.pm",
-               "version" : "0.48"
+               "version" : "0.49"
             }
          },
          "target" : "PAR::Dist",
-         "version" : "0.48"
+         "version" : "0.49"
       },
       "Path::Class" : {
-         "dist" : "Path-Class-0.26",
+         "dist" : "Path-Class-0.31",
          "mymeta" : {
             "abstract" : "Cross-platform path specification manipulation",
             "author" : [
                "Ken Williams <kwilliams@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Build version 0.3901, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Build version 0.3901, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -2642,6 +2825,7 @@
                      "File::stat" : "0",
                      "IO::Dir" : "0",
                      "IO::File" : "0",
+                     "Scalar::Util" : "0",
                      "base" : "0",
                      "overload" : "0",
                      "strict" : "0"
@@ -2658,30 +2842,30 @@
                   "url" : "git://github.com/kenahoo/Path-Class.git"
                }
             },
-            "version" : "0.26"
+            "version" : "0.31"
          },
          "name" : "Path::Class",
-         "pathname" : "K/KW/KWILLIAMS/Path-Class-0.26.tar.gz",
+         "pathname" : "K/KW/KWILLIAMS/Path-Class-0.31.tar.gz",
          "provides" : {
             "Path::Class" : {
                "file" : "Path/Class.pm",
-               "version" : "0.26"
+               "version" : "0.31"
             },
             "Path::Class::Dir" : {
                "file" : "Path/Class/Dir.pm",
-               "version" : "0.26"
+               "version" : "0.31"
             },
             "Path::Class::Entity" : {
                "file" : "Path/Class/Entity.pm",
-               "version" : "0.26"
+               "version" : "0.31"
             },
             "Path::Class::File" : {
                "file" : "Path/Class/File.pm",
-               "version" : "0.26"
+               "version" : "0.31"
             }
          },
          "target" : "Path::Class",
-         "version" : "0.26"
+         "version" : "0.31"
       },
       "UNIVERSAL::require" : {
          "dist" : "UNIVERSAL-require-0.13",
@@ -2691,7 +2875,7 @@
                "Michael G Schwern <schwern@pobox.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.50, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.50, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -2762,7 +2946,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -2958,7 +3142,7 @@
                "Gisle Aas <gisle@activestate.com>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -3028,7 +3212,7 @@
                "Yusuke Wada  C<< <yusuke@kamawada.com> >>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 1.00, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Install version 1.00, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -3126,7 +3310,7 @@
                "Robin Berjon, robin@knowscape.com, with lots of it having been done"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Install version 0.95, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Module::Install version 0.95, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -3188,7 +3372,7 @@
                "Clark Cooper (coopercc@netheaven.com)"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -3267,7 +3451,7 @@
                "unknown"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.55_02, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.55_02, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "unknown"
             ],
@@ -3355,7 +3539,7 @@
                "Grant McLean <grantm@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.101670, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.101670, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -3421,7 +3605,7 @@
                "Robin Berjon"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.44, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.44, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -3467,7 +3651,7 @@
                "Grant McLean <grantm@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.101670, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.101670, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -3529,7 +3713,7 @@
                "Adam Kennedy <adamk@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "perl_5"
             ],
@@ -3592,7 +3776,7 @@
                "unknown"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.120630",
+            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.120921",
             "license" : [
                "unknown"
             ],

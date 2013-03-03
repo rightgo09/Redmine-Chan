@@ -4,7 +4,10 @@ all_from 'lib/Redmine/Chan.pm';
 
 requires 'AnyEvent::IRC::Client';
 requires 'WebService::Simple';
-requires 'Config::Pit';
+requires 'Class::Accessor::Lite';
+requires 'Mouse';
+requires 'URI';
+requires 'JSON';
 
 tests 't/*.t';
 author_tests 'xt';

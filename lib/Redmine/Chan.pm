@@ -1,114 +1,139 @@
-package Redmine::Chan;
+package Redmine::Chan {
+  use Mouse;
+  use Mouse::Util::TypeConstraints;
+  use URI;
+  use Redmine::Chan::API;
+  use Redmine::Chan::Recipe;
 
-use warnings;
-use strict;
-our $VERSION = '0.01';
+  my $subtype_uri = subtype 'Redmine::Chan::URI'
+    => as class_type('URI');
+  coerce $subtype_uri
+    => from 'Str' => via { URI->new($_) };
 
-use AnyEvent;
-use AnyEvent::IRC::Connection;
-use AnyEvent::IRC::Client;
+  has 'redmine_url'     => (is => 'ro', isa => $subtype_uri, required => 1, coerce => 1);
+  has 'redmine_api_key' => (is => 'ro', isa => 'Str',        required => 1);
+  has 'irc_channels'    => (is => 'ro', isa => 'HashRef',    required => 1);
+  has 'irc_server'      => (is => 'ro', isa => 'Str',        required => 1);
+  has 'irc_port'        => (is => 'ro', isa => 'Int',        required => 1);
+  has 'irc_password'    => (is => 'ro', isa => 'Str',        required => 1);
 
-use Redmine::Chan::API;
-use Redmine::Chan::Recipe;
+  has 'nick'   => (is => 'ro', isa => 'Str',                   default => 'minechan');
+  has 'api'    => (is => 'ro', isa => 'Redmine::Chan::API',    default => \&default_api,    lazy => 1);
+  has 'recipe' => (is => 'ro', isa => 'Redmine::Chan::Recipe', default => \&default_recipe, lazy => 1);
+  has 'cv'     => (is => 'rw', isa => 'AnyEvent::CondVar'    );
+  has 'irc'    => (is => 'rw', isa => 'AnyEvent::IRC::Client');
 
-use Class::Accessor::Lite (
-    rw => [ qw(
-        irc_server
-        irc_port
-        irc_channels
-        irc_password
-        nick
-        redmine_url
-        redmine_api_key
-        api
-        recipe
-        issue_fields
-        status_commands
-        custom_field_prefix
-     ) ],
-);
-
-sub new {
+  sub BUILDARGS {
     my $class = shift;
-    my $self = bless {@_}, $class;
-    $self->init;
-    $self;
-}
+    return ref($_[0]) eq 'HASH' ? $_[0] : { @_ };
+  }
 
-sub init {
+  sub BUILD {
     my $self = shift;
-    my $cv = AnyEvent->condvar;
+    $self->init;
+  }
+
+  __PACKAGE__->meta->make_immutable;
+
+  no Mouse;
+
+  use AnyEvent;
+  use AnyEvent::IRC::Client;
+
+  sub init {
+    my $self = shift;
+
+    # fetch metadata of redmine
+    $self->api->reload;
+
+    my $cv  = AnyEvent->condvar;
     my $irc = AnyEvent::IRC::Client->new;
-    $self->nick($self->nick || 'minechan');
-
-    my $api = Redmine::Chan::API->new;
-    $api->base_url($self->redmine_url);
-    $api->api_key($self->redmine_api_key);
-    $api->issue_fields($self->issue_fields);
-    $api->status_commands($self->status_commands);
-    $api->custom_field_prefix($self->custom_field_prefix);
-    $api->reload;
-    $self->api($api);
-
-    my $recipe = Redmine::Chan::Recipe->new(
-        api      => $self->api,
-        nick     => $self->nick,
-        channels => $self->irc_channels,
-    );
-    $self->recipe($recipe);
 
     $irc->reg_cb(
-        registered => sub {
-            print "registered.\n";
-        },
-        disconnect => sub {
-            print "disconnected.\n";
-        },
-        publicmsg => sub {
-            my ($irc, $channel, $ircmsg) = @_;
-            my (undef, $who) = $irc->split_nick_mode($ircmsg->{prefix});
-            my $msg = $self->recipe->cook(
-                irc     => $irc,
-                channel => $channel,
-                ircmsg  => $ircmsg,
-                who     => $who,
-            );
-            $irc->send_chan($channel, "NOTICE", $channel, $msg) if $msg;
-        },
-        privatemsg => sub {
-            # TODO
-            my ($irc, $channel, $ircmsg) = @_;
-            my (undef, $who) = $irc->split_nick_mode($ircmsg->{prefix});
-            my $key = $ircmsg->{params}[1];
-            my $msg = $api->set_api_key($who, $key);
-            $irc->send_msg("PRIVMSG", $who, $msg);
-        },
+      registered => $self->cb_registered,
+      disconnect => $self->cb_disconnect,
+      publicmsg  => $self->cb_publicmsg,
+      privatemsg => $self->cb_privatemsg,
     );
-    $self->{cv}  = $cv;
-    $self->{irc} = $irc;
-}
 
-sub cook {
+    $self->cv($cv);
+    $self->irc($irc);
+  }
+
+  sub default_api {
     my $self = shift;
-    my $cv  = $self->{cv};
-    my $irc = $self->{irc};
-    my $info = {
-        nick     => $self->nick,
-        real     => $self->nick,
-        password => $self->irc_password,
-    };
-    $irc->connect($self->irc_server, $self->irc_port || 6667, $info);
-    for my $name (keys %{$self->irc_channels}) {
-        $irc->send_srv("JOIN", $name);
-    }
-    $cv->recv;
-    $irc->disconnect;
-}
+    my $api = Redmine::Chan::API->new( # constructor of WebService::Simple
+      base_url => $self->redmine_url,
+    );
+    $api->member_api_key({});
+    $api->api_key($self->redmine_api_key);
+    return $api;
+  }
 
-*run = \&cook;
+  sub default_recipe {
+    my $self = shift;
+    my $recipe = Redmine::Chan::Recipe->new({
+      api      => $self->api,
+      nick     => $self->nick,
+      channels => $self->irc_channels,
+    });
+    return $recipe;
+  }
+
+  sub cb_registered {
+    return sub { print "registered.\n" };
+  }
+
+  sub cb_disconnect {
+    return sub { print "disconnected.\n" };
+  }
+
+  sub cb_publicmsg {
+    my $self = shift;
+    return sub {
+      my ($irc, $channel, $ircmsg) = @_;
+      my (undef, $who) = $irc->split_nick_mode($ircmsg->{prefix});
+      my $msg = $self->recipe->cook(
+        irc     => $irc,
+        channel => $channel,
+        ircmsg  => $ircmsg,
+        who     => $who,
+      );
+      #$irc->send_chan($channel, "NOTICE", $channel, $msg) if $msg;
+    };
+  }
+
+  sub cb_privatemsg {
+    my $self = shift;
+    return sub {
+      # TODO
+      my ($irc, $channel, $ircmsg) = @_;
+      my (undef, $who) = $irc->split_nick_mode($ircmsg->{prefix});
+      my $key = $ircmsg->{params}[1];
+      my $msg = $self->api->set_api_key($who, $key);
+      $irc->send_msg("PRIVMSG", $who, $msg);
+    };
+  }
+
+  sub cook {
+    my $self = shift;
+    my $info = {
+      nick     => $self->nick,
+      real     => $self->nick,
+      password => $self->irc_password,
+    };
+    $self->irc->connect($self->irc_server, $self->irc_port, $info);
+    for my $name (keys %{$self->irc_channels}) {
+      $self->irc->send_srv("JOIN", $name);
+    }
+    $self->cv->recv;
+    $self->irc->disconnect;
+  }
+
+  *run = \&cook;
+}
 
 1;
-
 __END__
 
 =head1 NAME
