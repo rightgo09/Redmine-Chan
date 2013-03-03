@@ -68,6 +68,13 @@ package Redmine::Chan::Recipe {
       $api->note_issue($issue_id, $note);
       $notice->($api->issue_detail($issue_id));
     }
+    # 複数issue 確認
+    elsif ((() = $msg =~ /\#(\d+)/g) > 1) {
+      while ($msg =~ /\#(\d+)/g) {
+        my $issue_id = $1;
+        $notice->($api->issue_detail($issue_id));
+      }
+    }
     # issue 確認/update
     elsif ($msg =~ /\#(\d+)/) {
       my $issue_id = $1;
