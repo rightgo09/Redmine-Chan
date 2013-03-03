@@ -25,6 +25,11 @@ package Redmine::Chan::API {
     response_parser => 'JSON',
   );
 
+  use YAML::Tiny;
+  my $member_api_key_file = 'member_api_key_file.yml';
+  -d $member_api_key_file || `touch $member_api_key_file`;
+  my $member_api_key_yaml = YAML::Tiny->read($member_api_key_file);
+
   sub fetch_data {
     my $self = shift;
     my $url  = shift or return;
@@ -78,6 +83,8 @@ package Redmine::Chan::API {
       }
       $self->$regexp($hash);
     }
+
+    $self->member_api_key($member_api_key_yaml->[0] || $self->member_api_key);
   }
 
   sub set_api_key {
@@ -85,6 +92,10 @@ package Redmine::Chan::API {
     $key =~ s{\s+}{}g;
     $key or return;
     $self->member_api_key->{$who} = $key;
+
+    $member_api_key_yaml->[0] = $self->member_api_key;
+    $member_api_key_yaml->write($member_api_key_file);
+
     return "set key $who : $key";
   }
 

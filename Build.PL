@@ -19,6 +19,7 @@ my $builder = Module::Build->new(
         'JSON' => 0,
         'URI'  => 0,
         'Mouse' => 0,
+        'YAML::Tiny' => 0,
     },
     add_to_cleanup      => [ 'Redmine-Chan-*' ],
 );

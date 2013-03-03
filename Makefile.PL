@@ -8,6 +8,7 @@ requires 'Class::Accessor::Lite';
 requires 'Mouse';
 requires 'URI';
 requires 'JSON';
+requires 'YAML::Tiny';
 
 tests 't/*.t';
 author_tests 'xt';
