@@ -223,10 +223,10 @@ package Redmine::Chan::API {
       #priority_id => 7,    # 優先度MAX
       estimated_hours => 3,  # 予定工数
       description => <<"...",
-  * 発端
-  ** 
-  * ゴール
-  ** 
+* 発端
+** 
+* ゴール
+** 
 ...
       %$issue,
     };
