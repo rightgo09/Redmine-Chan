@@ -50,8 +50,8 @@ package Redmine::Chan::Recipe {
       my $reply = $api->create_issue($1, $channel->{project_id});
       $notice->($reply);
       $reply =~ m|/(\d+) |;
-      $notice->("じゃあ#${1}をいつやるのか？");
       $self->buffer_issue_id($1);
+      $notice->("じゃあ#${1}をいつやるのか？");
     }
     # いまでしょ！
     elsif ($msg =~ /^(いま|今)でしょ(！|!)$/) {
