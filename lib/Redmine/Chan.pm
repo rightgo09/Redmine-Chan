@@ -22,6 +22,9 @@ package Redmine::Chan {
   has 'recipe' => (is => 'ro', isa => 'Redmine::Chan::Recipe', default => \&default_recipe, lazy => 1);
   has 'cv'     => (is => 'rw', isa => 'AnyEvent::CondVar'    );
   has 'irc'    => (is => 'rw', isa => 'AnyEvent::IRC::Client');
+  has 'issue_fields'        => (is => 'ro', isa => 'Maybe[ArrayRef]');
+  has 'status_commands'     => (is => 'ro', isa => 'Maybe[HashRef]' );
+  has 'custom_field_prefix' => (is => 'ro', isa => 'Maybe[HashRef]' );
 
   sub BUILDARGS {
     my $class = shift;
@@ -65,6 +68,9 @@ package Redmine::Chan {
     my $api = Redmine::Chan::API->new( # constructor of WebService::Simple
       base_url => $self->redmine_url,
     );
+    $api->issue_fields($self->issue_fields);
+    $api->status_commands($self->status_commands);
+    $api->custom_field_prefix($self->custom_field_prefix);
     $api->member_api_key({});
     $api->api_key($self->redmine_api_key);
     return $api;
