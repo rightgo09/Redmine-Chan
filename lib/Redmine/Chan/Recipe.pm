@@ -59,7 +59,7 @@ package Redmine::Chan::Recipe {
         $self->buffer_issue_id(undef);
         # FIXME: 優先度ハードコードを直す
         $api->put($issue_id, { priority_id => 7 });
-        $notice->("終わらずに帰れると思うなよ");
+        $notice->("(｀・ω・´)");
       }
     }
     # note 追加
