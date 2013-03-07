@@ -90,6 +90,9 @@ package Redmine::Chan::Recipe {
         $notice->('(´・ω・`)');
         $self->buffer_issue_id(undef);
       }
+      if ($msg =~ /うー/) {
+        $notice->('(／・ω・)／にゃー！');
+      }
       return;
     }
   }
