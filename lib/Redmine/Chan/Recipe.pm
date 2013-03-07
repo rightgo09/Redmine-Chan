@@ -80,12 +80,16 @@ package Redmine::Chan::Recipe {
       my $issue_id = $1;
       $api->update_issue($issue_id, $msg);
       $notice->($api->issue_detail($issue_id));
-    } else {
+    }
+    else {
       # 何もしない
       # 1行バッファにためる
       $self->buffer($msg);
       # いまでしょ用チケット番号クリア
-      $self->buffer_issue_id(undef);
+      if ($self->buffer_issue_id) {
+        $notice->('(´・ω・`)');
+        $self->buffer_issue_id(undef);
+      }
       return;
     }
   }
