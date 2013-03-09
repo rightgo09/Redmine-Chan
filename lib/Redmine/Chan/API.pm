@@ -123,7 +123,7 @@ package Redmine::Chan::API {
     my $authority = $uri->authority;
     $authority =~ s{^.*?\@}{}; # URLに認証が含まれてたら消す
     $uri->authority($authority);
-    $uri->path("/issues/$issue->{id}");
+    $uri->path($uri->path . "/issues/$issue->{id}");
 
     return "$uri : $subject\n";
   }
