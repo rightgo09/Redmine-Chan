@@ -123,7 +123,11 @@ package Redmine::Chan::API {
     my $authority = $uri->authority;
     $authority =~ s{^.*?\@}{}; # URLに認証が含まれてたら消す
     $uri->authority($authority);
-    $uri->path("/issues/$issue->{id}");
+    my @segments = ();
+    for my $segment ($uri->path_segments) {
+      push @segments, $segment if $segment ne "";
+    }
+    $uri->path_segments(@segments, "issues", $issue->{id});
 
     return "$uri : $subject\n";
   }
@@ -281,7 +285,11 @@ package Redmine::Chan::API {
     my ($self, $issue_id, $issue) = @_;
 
     my $uri = $self->base_url->clone;
-    $uri->path("issues/${issue_id}.json");
+    my @segments = ();
+    for my $segment ($uri->path_segments) {
+      push @segments, $segment if $segment ne "";
+    }
+    $uri->path_segments(@segments, "issues", "${issue_id}.json");
 
     # XXX: WebService::Simple に put 実装されてないので LWP::UserAgent の put 叩いてる
     $self->SUPER::put(
